@@ -1,0 +1,12 @@
+SELECT * 
+FROM employees
+WHERE department = 'HR';
+SELECT * 
+FROM employees
+WHERE age BETWEEN 20 AND 35;
+SELECT * 
+FROM employees
+WHERE city = 'Chicago' AND employment_type = 'Full-time';
+SELECT * 
+FROM employees
+WHERE department IN ('Marketing', 'Sales', 'Finance');
