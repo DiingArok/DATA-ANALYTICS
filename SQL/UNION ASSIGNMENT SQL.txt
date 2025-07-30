@@ -1,0 +1,19 @@
+AKOL UNION SQL ASSIGNMENT
+CREATE TABLE OnlinePurchases (
+    CustomerID INT,
+    CustomerName VARCHAR(100),
+    PurchaseAmount DECIMAL(10, 2)
+);
+
+CREATE TABLE InStorePurchases (
+    CustomerID INT,
+    CustomerName VARCHAR(100),
+    PurchaseAmount DECIMAL(10, 2)
+);
+SELECT CustomerID, CustomerName
+FROM OnlinePurchases
+
+UNION
+
+SELECT CustomerID, CustomerName
+FROM InStorePurchases;
